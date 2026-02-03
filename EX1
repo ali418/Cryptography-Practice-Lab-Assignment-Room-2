@@ -1,0 +1,23 @@
+; Part 1: Caesar Cipher (Manual) 
+; The Caesar cipher shifts each letter by a fixed number. Example: with shift 3, HELLO -> KHOOR 
+; 
+; Exercise 1.1: Encrypt (Shift Right 5) 
+; Plaintext         Your Answer 
+; MEET ME AT NOON = RJJY RJ EY SPPS
+; SECURITY        = XJHZWNYD
+; 
+; Exercise 1.2: Decrypt (Shift Left 7) 
+; Ciphertext        Your Answer 
+; OLSSV           = HELLO
+;
+; -----------------------------------------------
+; Reference Table:
+; a,0,     j,9,   s,18             
+; b,1,     k,10,   t,19
+; c,2,     l,11,   u,20
+; d,3,     m,12,   v,21
+; e,4,     n,13,   w,22
+; f,5,     o,14,   x,23
+; g,6,     p,15,   y,24
+; h,7,     q,16,   z,25
+; i,8,     r,17,
