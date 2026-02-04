@@ -1,0 +1,28 @@
+; Part 3: Vigenère Cipher
+; Vigenère uses a keyword for multiple shifts. Example: HELLO with keyword KEY -> RIJVS
+;
+; Exercise 3.1: Manual Encryption
+; Encrypt: ATTACK Keyword: LEMON
+;
+; Plain Keyword P Pos K Pos Sum   Sum%26 Cipher
+; A     L       0  +  11 =  11    11     L
+; T     E       19    4     23    23     X
+; T     M       19    12 =(31-26)  5      F
+; A     O       0     14    14    14     O
+; C     N       2     13    15    15     P
+; K     L       10    11    21    21     V
+;
+; Result: LXFOPV
+;
+; Exercise 3.2: Manual Decryption
+; Decrypt: LXFOPV Keyword: LEMON
+;
+; Cipher Keyword C Pos K Pos (C-K) (C-K+26)%26 Plain
+; L      L       11 -  11 =  0     0           A
+; X      E       23    4     19    19          T
+; F      M       5  -  12  (-7+26) 19          T
+; O      O       14    14    0     0           A
+; P      N       15    13    2     2           C
+; V      L       21    11    10    10          K
+;
+; Result: ATTACK
